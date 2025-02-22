@@ -27,23 +27,24 @@ namespace SFRepository.Implementation
                 con.Open();
                 var cmd = new SqlCommand("sp_crearCategoria", con);
                 cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
-                cmd.Parameters.AddWithValue("@Medida", objeto.RefMedida.IdMedida);
-                cmd.Parameters.Add("@MsjError", SqlDbType.VarChar,100).Direction = ParameterDirection.Output;
+                cmd.Parameters.AddWithValue("@IdMedida", objeto.RefMedida.IdMedida);
+                cmd.Parameters.Add("@MsjError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 try
                 {
                     await cmd.ExecuteNonQueryAsync();
-                    respuesta = Convert.ToString(cmd.Parameters["@Msjerror"].Value);
+                    respuesta = Convert.ToString(cmd.Parameters["@MsjError"].Value)!;
                 }
                 catch
                 {
                     respuesta = "Error(rp):No se pudo procesar";
                 }
-                
+
             }
             return respuesta;
         }
+
 
         public async Task<string> Editar(Categoria objeto)
         {
@@ -54,17 +55,17 @@ namespace SFRepository.Implementation
             {
                 con.Open();
                 var cmd = new SqlCommand("sp_editarCategoria", con);
-                cmd.Parameters.AddWithValue("@idCategoria", objeto.IdCategoria);
+                cmd.Parameters.AddWithValue("@IdCategoria", objeto.IdCategoria);
                 cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
                 cmd.Parameters.AddWithValue("@Activo", objeto.Activo);
-                cmd.Parameters.AddWithValue("@Medida", objeto.RefMedida.IdMedida);
+                cmd.Parameters.AddWithValue("@IdMedida", objeto.RefMedida.IdMedida);
                 cmd.Parameters.Add("@MsjError", SqlDbType.VarChar, 100).Direction = ParameterDirection.Output;
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 try
                 {
                     await cmd.ExecuteNonQueryAsync();
-                    respuesta = Convert.ToString(cmd.Parameters["@Msjerror"].Value);
+                    respuesta = Convert.ToString(cmd.Parameters["@MsjError"].Value);
                 }
                 catch
                 {
@@ -108,9 +109,9 @@ namespace SFRepository.Implementation
             return lista;
         }
 
-        public Task<List<Categoria>> Lista(string buscar = "")
+        public async Task<List<Categoria>> Lista(string buscar = "")
         {
-            throw new NotImplementedException();
+            return await lista(buscar); // Usa el método ya implementado.
         }
     }
 }

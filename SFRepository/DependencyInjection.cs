@@ -12,6 +12,7 @@ namespace SFRepository
             services.AddSingleton<Conexion>();
             services.AddTransient<IMedidaRepository, MedidaRepository>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            services.AddTransient<IProductoRepository, ProductoRepository>();
         }
     }
 }

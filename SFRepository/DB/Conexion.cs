@@ -20,7 +20,7 @@ namespace SFRepository.DB
         // Metodo Obtener nuestra cadena de conexion
         public SqlConnection ObtenerSQLConexion()
         {
-            return new SqlConnection("_cadenaSql");
+            return new SqlConnection(_cadenaSql);
         }
     }
 }
