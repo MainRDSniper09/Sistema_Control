@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SFPresentation.Formularios;
 using SFRepository;
 using SFRepository.Implementation;
 using SFRepository.Interfaces;
@@ -22,7 +23,7 @@ namespace SFPresentation
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             var host = CreateHostBuilder().Build(); // Conexion a nuestra cadena de conexion
-            var formService = host.Services.GetRequiredService<Form1>(); // Crear nuestro servicio 
+            var formService = host.Services.GetRequiredService<frmProducto>(); // Crear nuestro servicio 
             
             
             Application.Run(formService);
@@ -38,7 +39,8 @@ namespace SFPresentation
             services.RegisterRepositoryDependencies();
             services.RegisterServiceDependencies();
 
-            services.AddTransient<Form1>();
+            services.AddTransient<frmCategoria>();
+            services.AddTransient<frmProducto>();
             
         });
     }
