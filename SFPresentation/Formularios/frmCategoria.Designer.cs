@@ -96,14 +96,16 @@
             // 
             // btnBuscar
             // 
+            btnBuscar.BackColor = Color.White;
             btnBuscar.Cursor = Cursors.Hand;
             btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.ForeColor = Color.Black;
             btnBuscar.Location = new Point(651, 7);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
             // 
             // txbBuscar
@@ -115,14 +117,16 @@
             // 
             // btnNuevoLista
             // 
+            btnNuevoLista.BackColor = Color.White;
             btnNuevoLista.Cursor = Cursors.Hand;
             btnNuevoLista.FlatStyle = FlatStyle.Flat;
+            btnNuevoLista.ForeColor = Color.Black;
             btnNuevoLista.Location = new Point(6, 6);
             btnNuevoLista.Name = "btnNuevoLista";
             btnNuevoLista.Size = new Size(75, 23);
             btnNuevoLista.TabIndex = 0;
             btnNuevoLista.Text = "Nuevo";
-            btnNuevoLista.UseVisualStyleBackColor = true;
+            btnNuevoLista.UseVisualStyleBackColor = false;
             btnNuevoLista.Click += btnNuevoLista_Click;
             // 
             // tabNuevo
@@ -143,6 +147,7 @@
             // 
             // btnGuardarNuevo
             // 
+            btnGuardarNuevo.BackColor = Color.White;
             btnGuardarNuevo.Cursor = Cursors.Hand;
             btnGuardarNuevo.FlatStyle = FlatStyle.Flat;
             btnGuardarNuevo.ForeColor = Color.FromArgb(30, 90, 195);
@@ -151,19 +156,21 @@
             btnGuardarNuevo.Size = new Size(75, 23);
             btnGuardarNuevo.TabIndex = 5;
             btnGuardarNuevo.Text = "Guardar";
-            btnGuardarNuevo.UseVisualStyleBackColor = true;
+            btnGuardarNuevo.UseVisualStyleBackColor = false;
             btnGuardarNuevo.Click += btnGuardarNuevo_Click;
             // 
             // btnVolverNuevo
             // 
+            btnVolverNuevo.BackColor = Color.White;
             btnVolverNuevo.Cursor = Cursors.Hand;
             btnVolverNuevo.FlatStyle = FlatStyle.Flat;
+            btnVolverNuevo.ForeColor = Color.Black;
             btnVolverNuevo.Location = new Point(6, 287);
             btnVolverNuevo.Name = "btnVolverNuevo";
             btnVolverNuevo.Size = new Size(75, 23);
             btnVolverNuevo.TabIndex = 4;
             btnVolverNuevo.Text = "Volver";
-            btnVolverNuevo.UseVisualStyleBackColor = true;
+            btnVolverNuevo.UseVisualStyleBackColor = false;
             btnVolverNuevo.Click += btnVolverNuevo_Click;
             // 
             // cbbMedidaNuevo
@@ -179,6 +186,8 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(6, 73);
             label3.Name = "label3";
             label3.Size = new Size(50, 15);
@@ -195,6 +204,8 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(6, 12);
             label2.Name = "label2";
             label2.Size = new Size(54, 15);
@@ -232,6 +243,8 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(6, 138);
             label6.Name = "label6";
             label6.Size = new Size(65, 15);
@@ -240,6 +253,7 @@
             // 
             // btnGuardarEditar
             // 
+            btnGuardarEditar.BackColor = Color.White;
             btnGuardarEditar.Cursor = Cursors.Hand;
             btnGuardarEditar.FlatStyle = FlatStyle.Flat;
             btnGuardarEditar.ForeColor = Color.FromArgb(30, 90, 195);
@@ -248,19 +262,21 @@
             btnGuardarEditar.Size = new Size(75, 23);
             btnGuardarEditar.TabIndex = 11;
             btnGuardarEditar.Text = "Guardar";
-            btnGuardarEditar.UseVisualStyleBackColor = true;
+            btnGuardarEditar.UseVisualStyleBackColor = false;
             btnGuardarEditar.Click += btnGuardarEditar_Click;
             // 
             // btnVolverEditar
             // 
+            btnVolverEditar.BackColor = Color.White;
             btnVolverEditar.Cursor = Cursors.Hand;
             btnVolverEditar.FlatStyle = FlatStyle.Flat;
+            btnVolverEditar.ForeColor = Color.Black;
             btnVolverEditar.Location = new Point(6, 284);
             btnVolverEditar.Name = "btnVolverEditar";
             btnVolverEditar.Size = new Size(75, 23);
             btnVolverEditar.TabIndex = 10;
             btnVolverEditar.Text = "Volver";
-            btnVolverEditar.UseVisualStyleBackColor = true;
+            btnVolverEditar.UseVisualStyleBackColor = false;
             btnVolverEditar.Click += btnVolverEditar_Click;
             // 
             // cbbMedidaEditar
@@ -276,6 +292,8 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(6, 70);
             label4.Name = "label4";
             label4.Size = new Size(50, 15);
@@ -292,6 +310,8 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(6, 9);
             label5.Name = "label5";
             label5.Size = new Size(54, 15);
@@ -301,6 +321,8 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(16, 23);
             label1.Name = "label1";
             label1.Size = new Size(122, 15);

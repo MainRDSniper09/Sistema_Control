@@ -79,6 +79,8 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(16, 17);
             label1.Name = "label1";
             label1.Size = new Size(120, 15);
@@ -114,6 +116,8 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(432, 6);
             label4.Name = "label4";
             label4.Size = new Size(58, 15);
@@ -158,6 +162,8 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(9, 224);
             label5.Name = "label5";
             label5.Size = new Size(75, 15);
@@ -167,6 +173,8 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(9, 169);
             label6.Name = "label6";
             label6.Size = new Size(89, 15);
@@ -176,6 +184,8 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.BackColor = Color.White;
+            label11.ForeColor = Color.Black;
             label11.Location = new Point(9, 114);
             label11.Name = "label11";
             label11.Size = new Size(69, 15);
@@ -195,6 +205,8 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.BackColor = Color.White;
+            label12.ForeColor = Color.Black;
             label12.Location = new Point(9, 6);
             label12.Name = "label12";
             label12.Size = new Size(61, 15);
@@ -204,6 +216,8 @@
             // label13
             // 
             label13.AutoSize = true;
+            label13.BackColor = Color.White;
+            label13.ForeColor = Color.Black;
             label13.Location = new Point(9, 59);
             label13.Name = "label13";
             label13.Size = new Size(49, 15);
@@ -223,6 +237,8 @@
             // label14
             // 
             label14.AutoSize = true;
+            label14.BackColor = Color.White;
+            label14.ForeColor = Color.Black;
             label14.Location = new Point(435, 59);
             label14.Name = "label14";
             label14.Size = new Size(65, 15);
@@ -248,6 +264,7 @@
             btnVolverEditar.BackColor = Color.White;
             btnVolverEditar.Cursor = Cursors.Hand;
             btnVolverEditar.FlatStyle = FlatStyle.Flat;
+            btnVolverEditar.ForeColor = Color.Black;
             btnVolverEditar.Location = new Point(6, 284);
             btnVolverEditar.Name = "btnVolverEditar";
             btnVolverEditar.Size = new Size(75, 23);
@@ -283,6 +300,8 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.BackColor = Color.White;
+            label10.ForeColor = Color.Black;
             label10.Location = new Point(432, 15);
             label10.Name = "label10";
             label10.Size = new Size(58, 15);
@@ -327,6 +346,8 @@
             // label9
             // 
             label9.AutoSize = true;
+            label9.BackColor = Color.White;
+            label9.ForeColor = Color.Black;
             label9.Location = new Point(9, 233);
             label9.Name = "label9";
             label9.Size = new Size(75, 15);
@@ -336,6 +357,8 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.BackColor = Color.White;
+            label8.ForeColor = Color.Black;
             label8.Location = new Point(9, 178);
             label8.Name = "label8";
             label8.Size = new Size(89, 15);
@@ -345,6 +368,8 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.White;
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(9, 123);
             label7.Name = "label7";
             label7.Size = new Size(69, 15);
@@ -370,6 +395,7 @@
             btnVolverNuevo.BackColor = Color.White;
             btnVolverNuevo.Cursor = Cursors.Hand;
             btnVolverNuevo.FlatStyle = FlatStyle.Flat;
+            btnVolverNuevo.ForeColor = Color.Black;
             btnVolverNuevo.Location = new Point(6, 287);
             btnVolverNuevo.Name = "btnVolverNuevo";
             btnVolverNuevo.Size = new Size(75, 23);
@@ -391,6 +417,8 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(9, 15);
             label3.Name = "label3";
             label3.Size = new Size(61, 15);
@@ -400,6 +428,8 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(9, 68);
             label2.Name = "label2";
             label2.Size = new Size(49, 15);
@@ -434,6 +464,7 @@
             btnBuscar.BackColor = Color.White;
             btnBuscar.Cursor = Cursors.Hand;
             btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.ForeColor = Color.Black;
             btnBuscar.Location = new Point(651, 7);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
@@ -454,6 +485,7 @@
             btnNuevoLista.BackColor = Color.White;
             btnNuevoLista.Cursor = Cursors.Hand;
             btnNuevoLista.FlatStyle = FlatStyle.Flat;
+            btnNuevoLista.ForeColor = Color.Black;
             btnNuevoLista.Location = new Point(6, 6);
             btnNuevoLista.Name = "btnNuevoLista";
             btnNuevoLista.Size = new Size(75, 23);

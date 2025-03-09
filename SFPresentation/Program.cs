@@ -23,7 +23,7 @@ namespace SFPresentation
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             var host = CreateHostBuilder().Build(); // Conexion a nuestra cadena de conexion
-            var formService = host.Services.GetRequiredService<frmProducto>(); // Crear nuestro servicio 
+            var formService = host.Services.GetRequiredService<frmLogin>(); // Crear nuestro servicio 
             
             
             Application.Run(formService);
@@ -41,6 +41,16 @@ namespace SFPresentation
 
             services.AddTransient<frmCategoria>();
             services.AddTransient<frmProducto>();
+            services.AddTransient<frmNegocio>();
+            services.AddTransient<frmUsuario>();
+            services.AddTransient<frmVenta>();
+            services.AddTransient<frmBuscarProducto>();
+            services.AddTransient<frmHistorial>();
+            services.AddTransient<frmDetalleVenta>();
+            services.AddTransient<frmReporteVenta>();
+            services.AddTransient<frmLogin>();
+            services.AddTransient<frmActualizarClave>();
+            services.AddTransient<Layout>();
             
         });
     }
