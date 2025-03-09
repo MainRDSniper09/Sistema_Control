@@ -28,5 +28,10 @@ namespace SFServices.Implementation
         {
             return await _productoRepository.Lista(buscar);
         }
+
+        public async Task<Producto> Obtener(string codigo)
+        {
+            return await _productoRepository.Obtener(codigo);
+        }
     }
 }
