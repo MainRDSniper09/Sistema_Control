@@ -110,7 +110,7 @@ namespace SFRepository.Implementation
                     while (await dr.ReadAsync())
                     {
                         lista.Add(new Producto
-                        {   
+                        {
                             IdProducto = Convert.ToInt32(dr["IdProducto"]),
                             RefCategoria = new Categoria
                             {
@@ -119,7 +119,7 @@ namespace SFRepository.Implementation
                             },
                             Codigo = dr["Codigo"].ToString()!,
                             Descripcion = dr["Descripcion"].ToString()!,
-                            PrecioCompra = Convert.ToDecimal(dr["PrecioCompra"]), 
+                            PrecioCompra = Convert.ToDecimal(dr["PrecioCompra"]),
                             PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"]),
                             Cantidad = Convert.ToInt32(dr["Cantidad"]),
                             Activo = Convert.ToInt32(dr["Activo"]),
@@ -128,6 +128,45 @@ namespace SFRepository.Implementation
                 }
             }
             return lista;
+        }
+
+        public async Task<Producto> Obtener(string codigo)
+        {
+            Producto objeto = new Producto();
+
+            using (var con = _conexion.ObtenerSQLConexion())
+            {
+                con.Open();
+                var cmd = new SqlCommand("sp_obtenerProducto", con);
+                cmd.Parameters.AddWithValue("@Codigo", codigo);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                using (var dr = await cmd.ExecuteReaderAsync())
+                {
+                    if (await dr.ReadAsync())
+                    {
+                        objeto = new Producto
+                        {
+
+                            IdProducto = Convert.ToInt32(dr["IdProducto"]),
+                            RefCategoria = new Categoria
+                            {
+                                Nombre = dr["NombreCategoria"].ToString()!,
+                                RefMedida = new Medida
+                                {
+                                    Equivalente = dr["Equivalente"].ToString()!,
+                                    Valor = Convert.ToInt32(dr["Valor"]),
+                                }
+                            },
+                            Codigo = dr["Codigo"].ToString()!,
+                            Descripcion = dr["Descripcion"].ToString()!,
+                            PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"]),
+                            Cantidad = Convert.ToInt32(dr["Cantidad"]),
+                        };
+                    }
+                }
+            }
+            return objeto;
         }
     }
 }
