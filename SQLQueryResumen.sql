@@ -201,8 +201,8 @@ end
 
  select * from Negocio
 
- insert into Negocio(RazonSocial,RUC,Direccion,Celular,Correo,SimboloMoneda,NombreLogo,UrlLogo)
- values ('CodigoEstudiante','100100100','av.esperanza 123','900800700','ce@gmail.com','S/.','','')
+ insert into Negocio(RazonSocial,RUT,Direccion,Celular,Correo,SimboloMoneda,NombreLogo,UrlLogo)
+ values ('barretosanchez','100100100','av.esperanza 123','900800700','ce@gmail.com','S/.','','')
 
 
  CREATE PROCEDURE sp_obtenerNegocio
